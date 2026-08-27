@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu Example</title>
+    <style>
+        /* Reset default browser margins */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* The side menu container */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed; /* Fixed position keeps it stuck to the side */
+            z-index: 1; 
+            top: 0;
+            left: 0;
+            background-color: #111; /* Dark background */
+            padding-top: 20px;
+        }
+
+        /* The navigation links styled as buttons */
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block; /* Makes the whole area clickable */
+            transition: 0.3s; /* Smooth color change on hover */
+        }
+
+        /* Change color when hovering over the menu buttons */
+        .sidebar a:hover {
+            color: #f1f1f1;
+            background-color: #555; /* Highlights the button background */
+        }
+
+        /* Style the main page content next to the sidebar */
+        .main-content {
+            margin-left: 250px; /* Matches the width of the sidebar */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The Side Menu -->
+    <nav class="sidebar">
+        <a href="https://tlsgqd.a.wasmer.app">Pokemon Radical Red</a>
+        <a href="/Homework/prodigy.html">Pokemon All In</a>
+        <a href="https://example.com">Clients</a>
+        <a href="https://example.com">Contact</a>
+    </nav>
+
+    <!-- The Main Body Content -->
+    <div class="main-content">
+        <h2>Main Body Content</h2>
+        <p>This area contains the main content of your website. It is pushed to the right so it does not overlap with the side navigation bar.</p>
+    </div>
+
+</body>
+</html>
